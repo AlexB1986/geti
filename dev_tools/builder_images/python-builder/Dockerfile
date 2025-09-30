@@ -8,6 +8,8 @@ COPY --from=ghcr.io/astral-sh/uv:0.6.12@sha256:515b886e8eb99bcf9278776d8ea41eb45
 
 ARG DOCKER_VERSION="5:28.0.4-1~debian.12~bookworm"
 
+
+
 ENV DOCKER_VERSION=${DOCKER_VERSION}
 
 RUN apt update \
